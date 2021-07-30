@@ -1,4 +1,4 @@
-HEROKU_EMAIL_ADDRESS=julienseguy@me.com
+# HEROKU_EMAIL_ADDRESS=my_mail_adress
 
 # ----------------------------------
 #          INSTALL & TEST
