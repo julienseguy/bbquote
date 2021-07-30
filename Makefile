@@ -1,3 +1,5 @@
+HEROKU_EMAIL_ADDRESS=julienseguy@me.com
+
 # ----------------------------------
 #          INSTALL & TEST
 # ----------------------------------
@@ -11,7 +13,8 @@ black:
 	@black scripts/* bbquote/*.py
 
 test:
-	@coverage run -m pytest tests/*.py
+# 	@coverage run -m pytest tests/*.py
+	@coverage run -m pytest $(filter-out test/__init__.py, $(test/*.py))
 	@coverage report -m --omit="${VIRTUAL_ENV}/lib/python*"
 
 ftest:
